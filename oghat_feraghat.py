@@ -5,9 +5,10 @@ t = [input() for i in range(n)]
 s = input()
 size = len(s)
 ans = 0
+
 #horizontal
 for i in range(n):
-    for j in range (m - size + 1):
+    for j in range(m - size + 1):
         diff = 0
         for k in range(size):
             if s[k] != t[i][k + j]:
@@ -17,7 +18,7 @@ for i in range(n):
 
 #vertical
 for i in range(n - size + 1):
-    for j in range (m):
+    for j in range(m):
         diff = 0
         for k in range(size):
             if s[k] != t[i + k][j]:
